@@ -1,0 +1,15 @@
+﻿body {
+    text-align:center;
+}
+
+.left-div-login {
+    text-align: center;
+    background-color: bisque;
+}
+.image-circle {
+    display: inline-block;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+}
