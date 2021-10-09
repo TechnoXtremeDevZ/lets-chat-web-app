@@ -1,10 +1,12 @@
-﻿body {
+body {
     text-align:center;
 }
 
 .left-div-login {
     text-align: center;
     background-color: bisque;
+    position:relative;
+    left:-50px;
 }
 .image-circle {
     display: inline-block;
