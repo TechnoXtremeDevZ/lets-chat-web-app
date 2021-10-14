@@ -4,10 +4,20 @@ body {
 
 .left-div-login {
     text-align: center;
-    background-color: bisque;
     position: relative;
     left: -600px;
-    height: 625px;
+    height: 650px;
+}
+
+#web-div-intro {
+    margin-left: -600px;
+    margin-top: -400px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#web-div-name {
+    margin-left: -600px;
+    font-family: 'Raleway', sans-serif;
 }
 
 .image-circle {
@@ -19,4 +29,30 @@ body {
     position: relative;
     left: 300px;
     bottom: -100px;
+}
+
+#web-logo-right {
+    float: right;
+    background-color: aquamarine;
+    width: 600px;
+    height: 620px;
+    margin-top: -325px;
+}
+
+#login-intro {
+    margin-top: 150px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#user_name {
+    width: 400px;
+    margin-left: 100px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+}
+
+#user_button {
+    margin-top: 25px;
+    margin-left: -5px;
+    font-family: 'Raleway', sans-serif;
 }
