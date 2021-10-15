@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -31,49 +31,6 @@
     <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
 </head>
 <body>
-
-    <!-- First DIV (Left side) -->
-
-    <div id="web-logo" class="left-div-login">
-
-        <!-- Chat App Logo (Image) -->
-
-        <image id="logo-circle" class="image-circle"
-               src="image-logo.png"></image>
-        <br />
-    </div>
-
-    <!-- H2 for chat app intro and H4 for small description -->
-
-    <h2 id="web-div-intro">
-        Let's Chat Web App
-    </h2>
-    <h4 id="web-div-name">
-        A Chatting App
-    </h4>
-
-    <!-- Second DIV (Right side) -->
-
-    <div id="web-logo-right" class="right-div-login">
-
-        <!-- H2 Login Intro (the Header) -->
-        <h2 id="login-intro">
-            Login
-        </h2>
-        <br />
-
-        <!-- Text Input for the user to type in 
-             their username -->
-
-        <input id="user_name" class="form-control" placeholder="Username" />
-
-        <!-- The button so the username can be 
-             stored into the system and the user 
-             can be redirected to the Chat App Room
-             Page -->
-        <button id="user_button" class="btn btn-info" onclick="addUser()">
-            Login
-        </button>
-    </div>
+    <button id="log_out" class="btn btn-info" onclick="logOut()">Log Out</button>
 </body>
 </html>
