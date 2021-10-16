@@ -10,3 +10,15 @@ body {
     height: 40px;
     font-family: 'Raleway', sans-serif;
 }
+
+#logo_app_room {
+    width: 100px;
+    height: 100px;
+    margin-right: 200px;
+}
+
+#app_room_intro {
+    margin-right: -150px;
+    margin-top: -65px;
+    font-family: 'Raleway', sans-serif;
+}
