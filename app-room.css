@@ -1,2 +1,12 @@
-﻿body {
+body {
+    text-align: center;
+    background-color: #6383a8;
+}
+
+#log_out {
+    margin-left: 1075px;
+    margin-top: 10px;
+    width: 75px;
+    height: 40px;
+    font-family: 'Raleway', sans-serif;
 }
