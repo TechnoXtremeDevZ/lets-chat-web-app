@@ -1,4 +1,4 @@
-﻿const firebaseConfig = {
+const firebaseConfig = {
     apiKey: "AIzaSyABBONcZWGCTWizpQ8Fp2VIIobCACHlTcQ",
     authDomain: "let-s-chat-app-319fd.firebaseapp.com",
     databaseURL: "https://let-s-chat-app-319fd-default-rtdb.firebaseio.com",
@@ -11,3 +11,6 @@
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
+// The User Name
+document.getElementById("bun-tag").innerHTML = localStorage.getItem(user_name);
