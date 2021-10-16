@@ -13,4 +13,5 @@ const firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 // The User Name
-document.getElementById("bun-tag").innerHTML = localStorage.getItem(user_name);
+the_user_name = localStorage.getItem(user_name);
+document.getElementById("bun-tag").innerHTML = the_user_name;
