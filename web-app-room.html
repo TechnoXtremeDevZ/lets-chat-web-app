@@ -9,8 +9,6 @@
           href="web-app.css" />
     <link rel="stylesheet" type="text/css" lang="en-us"
           href="app-room.css" />
-    <script src="app.js"></script>
-    <script src="room-app.js"></script>
 
     <!-- Bootstrap Links -->
 
@@ -29,6 +27,8 @@
     <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <script src="room-app.js"></script>
 </head>
 <body>
     <div id="top-room">
@@ -41,10 +41,22 @@
         </h3>
 
         <h3 id="welcome-tag">
-            Welcome, 
+            Welcome! 
         </h3>
-        <h3 id="bun-tag">
-        </h3>
+
+        <p id="description">
+            Enter a room, or create one yourself!
+        </p>
+
+        <input id="create-room" class="form-control" placeholder="Room ID" 
+               onclick="createRoom()" />
+
+        <h2 id="current-rooms">
+            Trending Rooms
+        </h2>
+    </div>
+    <div id="output">
+
     </div>
 </body>
 </html>
