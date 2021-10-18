@@ -1,6 +1,5 @@
 body {
     text-align: center;
-    background-color: #6383a8;
 }
 
 #log_out {
@@ -17,8 +16,59 @@ body {
     margin-right: 200px;
 }
 
+    #logo_app_room:hover {
+        cursor: default;
+    }
+
 #app_room_intro {
     margin-right: -150px;
     margin-top: -65px;
+    color: white;
     font-family: 'Raleway', sans-serif;
+}
+
+#top-room {
+    background-color: aquamarine;
+    height: 60px;
+}
+
+#main-room {
+    background-color: #6383a8;
+    height: 540.95px;
+}
+
+#welcome-tag {
+    margin-top: 50px;
+    margin-right: -50px;
+    background-color: black;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+}
+
+#description {
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+#create-room {
+    margin-top: 25px;
+    width: 250px;
+    margin-left: 495px;
+    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+
+#current-rooms {
+    font-family: 'Raleway', sans-serif;
+    color: white;
+    background-color: black;
+    margin-right: -50px;
+    margin-top: 25px;
+}
+
+#output {
+    background-color: #6383a8;
 }
