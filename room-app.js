@@ -11,3 +11,48 @@ const firebaseConfig = {
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
+
+var user_name = localStorage.getItem("user_name", user_name);
+
+document.getElementById("un_intro").innerHTML = "<h3>Welcome " + user_name + "!</h3>";
+
+function getData() {
+    firebase.database().ref("/").on('value', function (snapshot) {
+        document.getElementById("output").innerHTML = "";
+        snapshot.forEach(function (childSnapshot) {
+            childKey = childSnapshot.key;
+            Room_names = childKey;
+
+            row = "<h3 class='room_name' id=" + Room_names + " onclick='redirect(this.id)'>" + Room_names + "</h3><hr>";
+
+            document.getElementById("output").innerHTML += row;
+        });
+    });
+}
+getData();
+
+function redirect(name) {
+    localStorage.setItem("room_name", name);
+
+    window.location = "web-app-page.html";
+}
+
+function addRoom() {
+    var room_name = document.getElementById("room_name").value;
+
+    firebase.database().ref("/").child(room_name).update({
+        room_name: room_name,
+        purpose: "adding room"
+    })
+
+    localStorage.setItem("room_name", room_name);
+
+    window.location = "web-app-page.html";
+}
+
+function logOut() {
+    localStorage.removeItem("user_name");
+    localStorage.removeItem("room_name");
+
+    window.location = "index.html";
+}
