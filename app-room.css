@@ -72,3 +72,9 @@ body {
 #output {
     background-color: #6383a8;
 }
+
+#finish {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 20px;
+    margin-right: -50px;
+}
