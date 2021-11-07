@@ -34,7 +34,7 @@ body {
 
 #main-room {
     background-color: #6383a8;
-    height: 540.95px;
+    height: 110px;
 }
 
 #welcome-tag {
@@ -77,4 +77,34 @@ body {
     font-family: 'Raleway', sans-serif;
     margin-top: 20px;
     margin-right: -50px;
+}
+
+#log_out_2 {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 10px;
+    margin-right: -1100px;
+}
+
+#send-message {
+    color: white;
+    margin-top: -150px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#message {
+    text-align: center;
+    width: 300px;
+    font-family: 'Raleway', sans-serif;
+}
+
+#send {
+    font-family: 'Raleway', sans-serif;
+}
+
+#send-room {
+    background-color: #6383a8;
+}
+
+#output {
+    height: 430px;
 }
