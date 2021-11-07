@@ -1,10 +1,61 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
     <title>Let's Chat Web App</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" type="text/css" lang="en-us"
+          href="web-app.css" />
+    <link rel="stylesheet" type="text/css" lang="en-us"
+          href="app-room.css" />
+
+    <!-- Bootstrap Links -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <!-- Font Links -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+
+    <!-- Firebase Links -->
+
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+
+    <script src="room-page.js"></script>
 </head>
 <body>
-
+    <div id="top-room">
+        <button id="log_out_2" class="btn btn-info" onclick="logOut()">
+            Log Out
+        </button>
+    </div>
+    <div id="main-room">
+        <image id="logo_app_room" src="image-logo.png"></image>
+        <h3 id="app_room_intro">
+            Let's Chat Web App
+        </h3>
+    </div>
+    <div id="output">
+        <!-- Blank -->
+    </div>
+    <div id="send-room">
+        <center>
+            <h4 id="send-message">
+                Send
+            </h4>
+            <input id="message" class="form-control" placeholder="Send">
+            <br />
+            <button id="send" class="btn btn-info" onclick="send()">
+                Send
+            </button>
+        </center>
+    </div>
 </body>
 </html>
